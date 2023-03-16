@@ -425,6 +425,67 @@ footer .container {
   height: 24px;
   fill: var(--additional-background-color);
 }
+
+.footer-subscribe {
+  margin-left: 80px;
+}
+
+.subscribe {
+  color: var(--secondary-color);
+  margin-bottom: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.subscribe-input-email {
+  width: 264px;
+  height: 40px;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  outline: transparent;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  padding-left: 16px;
+}
+
+.subscribe-input-email::placeholder {
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+}
+.subscribe-form {
+  display: flex;
+  gap: 24px;
+}
+
+.subscribe-btn {
+  font-style: inherit;
+  font-weight: 500;
+  color: #ffffff;
+  line-height: 1.5;
+  width: 165px;
+  height: 40px;
+  padding: 8px, 24px, 8px, 24px;
+  background: #4d5ae5;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: none;
+  border-radius: 4px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: background-color;
+}
+
+.subscribe-btn:hover,
+.subscribe-btn:focus {
+  background-color: var(--link-hover-color);
+}
+
 /* ============================= FOOTER =============================*/
 
 /*================================PORTFOLIO===========================*/
@@ -565,10 +626,133 @@ footer .container {
   align-items: center;
   justify-content: center;
   margin-left: auto;
+  margin-bottom: 20px;
   cursor: pointer;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: background-color;
+}
+
+.modal-title {
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  line-height: 1.5;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.input-text {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: #8e8f99;
+}
+
+.modal-input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid #2e2f421a;
+  border-radius: 4px;
+  background-color: transparent;
+  padding-left: 38px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: border-color;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+}
+
+.modal-input:placeholder-shown {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+}
+
+.modal-input:focus {
+  outline: transparent;
+  border-color: #4d5ae5;
+}
+
+.modal-input:focus + .modal-input-icon {
+  fill: #4d5ae5;
+}
+
+.modal-field {
+  margin-bottom: 8px;
+}
+
+.modal-input-label {
+  margin-bottom: 4px;
+}
+
+.modal-input-wrap {
+  position: relative;
+}
+
+.modal-input-icon {
+  position: absolute;
+  left: 19px;
+  top: 50%;
+  transform: translateY(-50%);
+  fill: #2e2f42;
+  width: 12px;
+  height: 12px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: fill;
+}
+
+.modal-textarea {
+  padding: 8px 16px;
+  height: 120px;
+  resize: none;
+}
+
+.terms-label {
+  display: flex;
+}
+
+.checkbox-field {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.terms-label span {
+  width: 16px;
+  height: 16px;
+  border: 1px solid #2e2f42;
+  border-radius: 2px;
+  margin-right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
+  outline: transparent;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: background-color, border-color, fill;
+}
+
+.modal-checkbox:checked + .terms-label > span {
+  background-color: #404bbf;
+  border-color: #404bbf;
+  fill: #f4f4fd;
+}
+
+.terms-text {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+}
+
+.terms-link {
+  color: rgba(77, 90, 229, 1);
+  text-decoration: underline;
 }
 
 .modal-cross-button:hover,
@@ -587,6 +771,30 @@ footer .container {
 .modal-cross-button:hover .modal-icon-cross,
 .modal-cross-button:focus .modal-icon-cross {
   fill: #fff;
+}
+
+.modal-submit-button {
+  display: block;
+  font-style: inherit;
+  font-weight: 500;
+  color: #ffffff;
+  line-height: 1.5;
+  width: 169px;
+  height: 56px;
+  margin: 24px auto auto auto;
+  padding: 16px 32px;
+  background: #4d5ae5;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: none;
+  border-radius: 4px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: background-color;
+}
+
+.modal-submit-button:hover,
+.modal-submit-button:focus {
+  background-color: var(--link-hover-color);
 }
 
 /*================================ MODAL ===========================*/
