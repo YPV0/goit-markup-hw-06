@@ -665,12 +665,6 @@ footer .container {
   letter-spacing: 0.01em;
 }
 
-.modal-input:placeholder-shown {
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
-}
-
 .modal-input:focus {
   outline: transparent;
   border-color: #4d5ae5;
