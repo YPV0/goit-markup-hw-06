@@ -377,7 +377,11 @@
                     <input class="subscribe-input-email" id="subscribe-inputemail" type="email"
                         name="subscribe-input-email" placeholder="Email" required minlength="5"
                         title="e.g: example@gmail.com">
-                    <button class="subscribe-btn" type="submit">Subscribe</button>
+                    <button class="subscribe-btn" type="submit">Subscribe
+                        <svg class="subscribe-icon">
+                            <use href=./images/icons.svg#icon-telegram></use>
+                        </svg>
+                    </button>
                 </form>
             </div>
 
@@ -425,7 +429,7 @@
                         </svg>
                     </div>
                 </div>
-                <div class="modal-field">
+                <div class="modal-field text-area-wrap">
                     <label for="input-comment" class="modal-input-label"><span class="input-text">
                             Comment</span></label>
 
@@ -437,16 +441,17 @@
                 <div class="modal-field checkbox-field">
                     <input class="modal-checkbox visually-hidden" type="checkbox" id="modal-terms">
                     <label class="terms-label" for="modal-terms">
-                        <span>
+                        <span class="terms-checkbox">
                             <svg class="modal-checkbox-icon" width="10" height="8">
                                 <use href="./images/icons.svg#icon-check"></use>
                             </svg>
                         </span>
+                        <span class="terms-text">I accept the terms and conditions of the <a href="#"
+                                class="terms-link">Privacy
+                                Policy</a></span>
 
                     </label>
-                    <span class="terms-text">I accept the terms and conditions of the <a href="#"
-                            class="terms-link">Privacy
-                            Policy</a></span>
+
 
                 </div>
                 <button type="submit" class="modal-submit-button">Send</button>
